@@ -75,6 +75,9 @@ class GitWrapper():
 
         res = call([cmd], shell=True)
         print 'Pull result: ' + str(res)
+        # change permissions 
+        cmd2 = 'chown -R -c "' + repo_config['user'] +'":"'+ repo_config['user'] +' ' + repo_config['path'] + '"' 
+        change_per = call([cmd2], shell=True)
 
         return int(res)
 
