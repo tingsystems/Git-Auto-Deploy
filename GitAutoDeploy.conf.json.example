@@ -11,6 +11,7 @@
 		"url": "https://github.com/olipo186/Git-Auto-Deploy.git",
 		"branch": "master",
 		"path": "~/repositories/Git-Auto-Deploy",
+		"user": "user",
 		"deploy": "echo deploying"
 	},
 	{
